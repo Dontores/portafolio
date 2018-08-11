@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -41,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #2d2d2d;
+    background: rgba(58, 58, 58, 0.9);
     list-style: none;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
@@ -50,7 +49,7 @@
   .menu .brand-image {
     margin: 0;
     padding: 0;
-    background: #3a3a3a;
+    background: rgba(58, 58, 58, 0.7);
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu .brand-image.show {
@@ -89,6 +88,38 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  .menu .brand-image, .menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 24px; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .brand-image {
+    height: 30vh;
+    transform: translate3d(-100%, 0, 0); }
+    .menu .brand-image.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .brand-image .portrait {
+      background: url(../img/kieferSmall.jpg);
+      background-size: cover;
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }

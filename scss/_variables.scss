@@ -38,3 +38,29 @@ $navOpacity: 0.9;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+//media queries
+
+@mixin smallScreen {
+  @media screen and(max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediumScreen {
+  @media screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin largeScreen {
+  @media screen and(min-width: 769px) and(max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin extraLargeScreen {
+  @media screen and(min-width:1171px) {
+    @content;
+  }
+}
