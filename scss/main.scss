@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "menu";
 * {
   box-sizing: border-box;
 }
@@ -30,6 +30,7 @@ h3 {
     margin-bottom: 1em;
     padding: 0.5em 1em;
     background: rgba(lighten($primary-color, $amount), $opaticy);
+    border-radius: 1rem;
   }
 }
 
