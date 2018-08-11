@@ -22,7 +22,7 @@ function toggle() {
     menu.classList.remove("show");
     navMenu.classList.remove("show");
     brandImage.classList.remove("show");
-    navItems.forEach(navItem => navItem.classList.add("show"));
+    navItems.forEach(navItem => navItem.classList.remove("show"));
 
     showMenu = false;
   }

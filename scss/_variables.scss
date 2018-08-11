@@ -31,6 +31,9 @@ $background-opacity: 0.9;
   }
 }
 
+//opacidad para la capa de menu
+$navOpacity: 0.9;
+
 //functions
 @mixin easeOut {
   transition: all 0.5s ease-out;
