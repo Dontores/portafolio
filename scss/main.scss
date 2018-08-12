@@ -132,6 +132,53 @@ main {
 .job-title {
   border-bottom: $secondary-color 2px solid;
 }
+
+//proyectos
+
+.proyect-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//estilos de botones
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  width: 100%;
+
+  &:hover {
+    background: $secondary-color;
+    color: setTextColor($secondary-color);
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: white;
+}
+
 //pie de pagina
 
 #footer {
