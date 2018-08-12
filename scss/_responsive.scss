@@ -9,6 +9,24 @@
 
 //pc y laptops
 @include largeScreen {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .proyect-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  //contact
+  .contact {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //tablet y laptop pequeñas
@@ -78,6 +96,11 @@
   .proyect-info {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  //contact
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // telefonos mobiles
@@ -86,13 +109,44 @@
     margin-top: 10vh;
   }
 
+  // headings
+
+  h1,
+  h2,
+  h3 {
+    &.lg-heading {
+      font-size: 3rem;
+    }
+    //texto secundario
+    &.sm-heading {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
   .secondary-text {
     font-size: 3rem;
+  }
+
+  //about
+  .bio-image {
+    width: 200px;
+    height: 200px;
   }
 
   //proyectos
 
   .proyect-info {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  //contactos
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+
+    .contact-way {
+      padding: 0.3rem;
+      padding-top: 0.5rem;
+    }
   }
 }

@@ -179,6 +179,34 @@ main {
   color: white;
 }
 
+//contactos
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  text-align: center;
+
+  .contact-way {
+    text-align: center;
+    min-height: 150px;
+    padding: 1rem;
+    background: darken($primary-color, 1);
+
+    h2 {
+      line-height: 1rem;
+      margin-top: 1.5rem;
+    }
+    i {
+      @include easeOut;
+      cursor: pointer;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
 //pie de pagina
 
 #footer {
