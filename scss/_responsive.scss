@@ -19,6 +19,14 @@
     }
   }
 
+  //about
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
   .proyect-info {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -80,6 +88,8 @@
     }
   }
 
+  //about
+
   .about-info {
     grid-template-areas:
       "bio-image"
@@ -91,6 +101,11 @@
     grid-template-columns: 1fr;
   }
 
+  .bio {
+    grid-area: bio;
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
   //proyectos
 
   .proyect-info {
@@ -129,9 +144,15 @@
   }
 
   //about
+  #about {
+    padding: 15px 15px;
+  }
+  .about-info {
+    text-align: center;
+  }
   .bio-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   //proyectos

@@ -263,6 +263,10 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  .bio {
+    grid-area: bio;
+    font-size: 1.2rem;
+    margin-top: 20px; }
   .proyect-info {
     grid-template-columns: repeat(3, 1fr); }
   .contact {
@@ -298,6 +302,10 @@ main {
   .about-info {
     grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+  .bio {
+    grid-area: bio;
+    font-size: 1.3rem;
+    margin-top: 20px; }
   .proyect-info {
     grid-template-columns: repeat(2, 1fr); }
   .contact {
@@ -317,9 +325,13 @@ main {
     text-align: center; }
   .secondary-text {
     font-size: 3rem; }
+  #about {
+    padding: 15px 15px; }
+  .about-info {
+    text-align: center; }
   .bio-image {
-    width: 200px;
-    height: 200px; }
+    width: 150px;
+    height: 150px; }
   .proyect-info {
     grid-template-columns: repeat(1, 1fr); }
   .contact {
