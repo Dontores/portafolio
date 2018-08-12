@@ -1,6 +1,5 @@
 @import "variables";
 @import "menu";
-@import "responsive";
 
 * {
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
   @include background;
   background-color: $primary-color;
-  color: #fff;
+  color: setTextColor($primary-color);
   margin: 0;
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -59,13 +58,14 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
-
+  //height: 100%;
+  min-height: calc(100vh - 60px);
   .icons {
     margin-top: 1rem;
 
     a {
       padding: 0.4rem;
+      color: setTextColor($primary-color);
 
       &:hover {
         color: $secondary-color;
@@ -81,3 +81,65 @@ main {
     }
   }
 }
+
+//about
+
+.about-info {
+  display: grid;
+  grid-template-areas:
+    "bio-image bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.bio-image {
+  grid-area: bio-image;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+  width: 300px;
+  height: 300px;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+
+  .text-secondary {
+    color: $secondary-color;
+  }
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job-2 {
+  grid-area: job2;
+}
+
+.job-3 {
+  grid-area: job3;
+}
+
+.job {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+
+.job-title {
+  border-bottom: $secondary-color 2px solid;
+}
+//pie de pagina
+
+#footer {
+  font-size: 1.2rem;
+  height: 60px;
+  padding: 0.5rem;
+  background: darken($primary-color, 9);
+  text-align: center;
+}
+
+@import "responsive";

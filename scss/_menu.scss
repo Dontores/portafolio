@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: $link-color;
+    background: setTextColor($primary-color);
     @include easeOut;
   }
 
@@ -116,6 +116,7 @@
     @include easeOut;
     text-transform: capitalize;
     text-decoration: none;
+    color: setTextColor($primary-color);
 
     &:hover {
       color: $secondary-color;

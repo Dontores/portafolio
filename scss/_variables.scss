@@ -64,3 +64,13 @@ $navOpacity: 0.9;
     @content;
   }
 }
+
+//funcion para color secundario
+
+@function setTextColor($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
