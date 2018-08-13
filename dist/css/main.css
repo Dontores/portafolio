@@ -202,7 +202,8 @@ main {
   grid-gap: 0.7rem; }
   .proyect-info img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    height: 250px; }
     .proyect-info img:hover {
       opacity: 0.5;
       border-color: #00aced;
